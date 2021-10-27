@@ -440,6 +440,10 @@ nav.show div.icon-close {
   gap: 4rem;
 }
 
+#contact .logo span {
+    color: var(--text-color-light);
+}
+
 #contact .text p {
   margin-bottom: 2rem;
 }
