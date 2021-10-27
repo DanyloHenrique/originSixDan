@@ -440,10 +440,6 @@ nav.show div.icon-close {
   gap: 4rem;
 }
 
-#contact .logo span {
-    color: var(--text-color-light);
-}
-
 #contact .text p {
   margin-bottom: 2rem;
 }
@@ -479,6 +475,10 @@ footer.section {
 footer .logo {
   display: inline-block;
   margin-bottom: 1.5rem;
+}
+
+footer .logo span {
+    color: var(--text-color-light);
 }
 
 footer .brand p {
