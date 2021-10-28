@@ -145,5 +145,7 @@ function darkMode() {
       '--title-color',
       'hsl(var(--hue) 41% 10%)'
     )
+    
+    document.getElementById('mudaCor').innerHTML = 'Modo escuro'
   }
 }
