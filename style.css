@@ -26,7 +26,7 @@ img {
   --hue: 200;
   /* HSL color mode */
   --base-color: hsl(var(--hue) 100% 57%);
-  --base-color-second: hsl(var(--hue) 100% 85%);
+  --base-color-second: hsl(var(--hue) 100% 75%);
   --base-color-alt: hsl(var(--hue) 100% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
@@ -307,7 +307,7 @@ nav.show div.icon-close {
 
 /*====  ABOUT ============================ */
 #about {
-  background: white;
+  background: var(--body-color);
 }
 
 #about .container {
@@ -370,7 +370,7 @@ nav.show div.icon-close {
 
 /*====  TESTIMONIALS ============================ */
 #testimonials {
-  background: white;
+  background: var(--body-color);
   overflow: hidden !important;
 }
 
@@ -478,12 +478,22 @@ footer .logo {
 }
 
 footer .logo span {
-    color: var(--text-color-light);
+  color: var(--text-color-light);
 }
 
 footer .brand p {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
+}
+
+footer .brand p button {
+  margin-top: 1rem;
+  background: hsl(0 0% 98%);
+  color: hsl(0 0% 7%);
+}
+
+footer .brand p button:hover {
+  background: hsl(0 0% 70%);
 }
 
 footer i {

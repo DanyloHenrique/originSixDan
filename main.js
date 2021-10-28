@@ -108,3 +108,42 @@ window.addEventListener('scroll', function () {
   backToTop()
   activateMenuAtCurrentSection()
 })
+
+/* DARK MODE */
+const value = getComputedStyle(document.documentElement).getPropertyValue(
+  '--hue'
+)
+console.log(value)
+
+function darkMode() {
+  const value = getComputedStyle(document.documentElement).getPropertyValue(
+    '--hue'
+  )
+  if (value == 200) {
+    document.documentElement.style.setProperty('--hue', '174')
+    document.documentElement.style.setProperty('--body-color', 'hsl(0 0% 7%)')
+    document.documentElement.style.setProperty('--text-color', 'hsl(0 0% 98%)')
+    document.documentElement.style.setProperty(
+      '--text-color-light',
+      'hsl(0 0% 2%)'
+    )
+    document.documentElement.style.setProperty(
+      '--title-color',
+      'hsl(var(--hue) 41% 98%)'
+    )
+
+    document.getElementById('mudaCor').innerHTML = 'Modo claro'
+  } else {
+    document.documentElement.style.setProperty('--hue', '200')
+    document.documentElement.style.setProperty('--body-color', 'hsl(0 0% 98%)')
+    document.documentElement.style.setProperty('--text-color', 'hsl(0 0% 46%)')
+    document.documentElement.style.setProperty(
+      '--text-color-light',
+      'hsl(0 0% 98%)'
+    )
+    document.documentElement.style.setProperty(
+      '--title-color',
+      'hsl(var(--hue) 41% 10%)'
+    )
+  }
+}
